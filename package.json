@@ -1,0 +1,21 @@
+{
+  "name": "mdrproxy",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.6.1",
+    "typescript": "^3.5.3",
+    "nw":"^0.18.2",
+    "nw-builder":"^3.1.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node mdrproxy.js",
+    "dev":"nw src/",
+    "prod":"nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/"
+  },
+  "author": "lzghzr",
+  "license": "MIT",
+  "description": ""
+}
